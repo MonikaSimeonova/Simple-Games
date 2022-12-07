@@ -16,13 +16,13 @@ let availableCode = [
 ]
 function keyupFun(e) {
     if (availableCode.includes(e.code)) {
-        state.key[e.code] = false;
+        state.keys[e.code] = false;
     }
 }
 
 function keydownFun(e) {
     if (availableCode.includes(e.code)) {
-        state.key[e.code] = true;
+        state.keys[e.code] = true;
     }
 
 }
