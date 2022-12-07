@@ -5,8 +5,8 @@ let playScreen = document.getElementsByClassName("play-game")[0];
 let state = initState()
 let game = prepareGame()
 
-document.addEventListener('keyup', keyUpFun);
-document.addEventListener.apply('keydown', keydownFun);
+document.addEventListener('keyup', keyupFun);
+document.addEventListener('keydown', keydownFun);
 
 let availableCode = [
     "ArrowUp",
@@ -14,7 +14,7 @@ let availableCode = [
     "ArrowLeft",
     "ArrowRight"
 ]
-function keyUpFun(e) {
+function keyupFun(e) {
     if (availableCode.includes(e.code)) {
         state.key[e.code] = false;
     }
@@ -26,8 +26,6 @@ function keydownFun(e) {
     }
 
 }
-
-
 
 function startGame(e) {
     startScreen.style.display = 'none';

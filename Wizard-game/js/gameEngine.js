@@ -1,19 +1,19 @@
 
 function start(state,game){
     game.createWizard(state);
-    window.requestAnimationFrame(gameLoop.bind(null,state,game))
+    window.requestAnimationFrame(gameLoop.bind(null,state,game));
 }
 
 function gameLoop (state,game){
     let {wizard} = state
-    let {wizardElemnt} = game;
+    let {wizardElement} = game;
     console.log('gameLoop');
 
     modifyWizardPos(state,game)
 
     //render wizard
-    wizardElemnt.style.top = wizard.posY + 'px';
-    wizardElemnt.style.left = wizard.posX + 'px';
+    wizardElement.style.top = wizard.posY + 'px';
+    wizardElement.style.left = wizard.posX + 'px';
     
     window.requestAnimationFrame(gameLoop.bind(null,state,game))
 }
