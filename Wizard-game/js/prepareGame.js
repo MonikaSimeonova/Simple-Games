@@ -11,7 +11,11 @@ function prepareGame(){
             wizardElemnt.style.width= initState.wizard.width + 'px';
             wizardElemnt.style.height= initState.wizard.height + 'px';
             wizardElemnt.style.top = initState.wizard.posY + 'px';
+            wizardElemnt.style.left = initState.wizard.posX + 'px';
+            
             playScreen.appendChild(wizardElemnt);
+            this.wizardElemnt = wizardElemnt
+            return wizardElemnt
         }
     }
 }
