@@ -35,3 +35,7 @@ body {
     left: calc(100% / 2 - 50px);
     top: calc(100% / 2 - 7px);
 }
+
+.fireball{
+    background-image: url('../resourses/fire-ball.png');
+}

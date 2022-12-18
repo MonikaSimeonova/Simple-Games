@@ -16,6 +16,17 @@ function prepareGame(){
             playScreen.appendChild(wizardElement);
             this.wizardElement = wizardElement
             return wizardElement
+        },
+
+        createFireball(wizard,fireball){
+            let fireballElement = document.createElement('div');
+            fireballElement.classList.add('fireball');
+            fireballElement.style.left = wizard.posX;
+            fireballElement.style.top = wizard.posY;
+            fireballElement.style.width = fireball.width + 'px';
+            fireballElement.style.height = fireball.height + 'px';
+            this.fireballElement = fireballElement;
+            return fireballElement
         }
     }
 }

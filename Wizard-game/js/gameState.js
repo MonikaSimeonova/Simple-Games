@@ -18,6 +18,12 @@ function initState() {
             ArrowDown: false,
             ArrowLeft: false,
             ArrowRight: false,
+            Space: false
+        },
+        fireball: {
+            width: 40,
+            height: 40,
+            speed: 6
         }
     }
 }

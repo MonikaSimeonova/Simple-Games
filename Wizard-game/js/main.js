@@ -12,7 +12,8 @@ let availableCode = [
     "ArrowUp",
     "ArrowDown",
     "ArrowLeft",
-    "ArrowRight"
+    "ArrowRight",
+    "Space"
 ]
 function keyupFun(e) {
     if (availableCode.includes(e.code)) {
