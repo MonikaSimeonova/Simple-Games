@@ -1,17 +1,18 @@
 function initState() {
 
-    let posX = 0;
-    let posY = Math.floor(Math.random() * 1000)
+    let posX = Math.floor(Math.random() * 1000)
+    let posY = Math.floor(Math.random() * 500)
     return {
         player: 'Monik',
         score: 0,
+        gameOver: false,
         wizard: {
             width: 82,
             height: 100,
             posY,
             posX,
             speed: 10,
-    
+
         },
         keys: {
             ArrowUp: false,
@@ -24,6 +25,12 @@ function initState() {
             width: 40,
             height: 40,
             speed: 6
+        },
+        bug: {
+            width: 40,
+            height: 40,
+            speed: 10,
+            durationBug: 0
         }
     }
 }

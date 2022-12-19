@@ -39,3 +39,7 @@ body {
 .fireball{
     background-image: url('../resourses/fire-ball.png');
 }
+.bugs{
+    background: url('../resourses/bug.png');
+    background-size: cover;
+}
