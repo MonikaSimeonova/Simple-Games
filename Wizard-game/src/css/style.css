@@ -36,7 +36,7 @@ body {
 
 .wizard {
     position: absolute;
-    background-image: url("/src/images/wizard.png");
+    background-image: url("/Wizard-game/src/images/wizard.png");
     background-size: cover;
     
 }
